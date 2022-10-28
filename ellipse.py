@@ -8,13 +8,13 @@ def printE():
     plt = Point(x_center+x, y_center+y)
     plt.draw(win)
 
-    plt = Point(x_center-x, y_center-y)
+    plt = Point(x_center-x, y_center+y)
     plt.draw(win)
 
     plt = Point(x_center+x, y_center-y)
     plt.draw(win)
 
-    plt = Point(x_center-x, y_center+y)
+    plt = Point(x_center-x, y_center-y)
     plt.draw(win)
 
 
@@ -28,7 +28,7 @@ print("\n Now enter constants a and b = ")
 a = int(input())
 b = int(input())
 
-win = GraphWin('Draw Ellipse', 500, 500)
+win = GraphWin('Draw Ellipse', 800, 800)
 x = 0
 y = b
 a_sqr = a*a
@@ -69,7 +69,6 @@ tmp1 = (x+0.5)*(x+0.5)
 tmp2 = (y-1)*(y-1)
 d = b_sqr*tmp1+a_sqr*tmp2-(a_sqr*b_sqr)
 
-# do :
 printE()
 
 
